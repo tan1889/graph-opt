@@ -35,7 +35,7 @@ def get_node_id(x, y):
 F_MAX = 0.8
 
 # for N = 1e3, 1e4, 1e5, 1e6 set R = 16, 50, 158, 500
-for R in [5, 10, 100]:  # radius, x, y in {-R, ...,-1, 0, 1, ... R}
+for R in [10, 100]:  # radius, x, y in {-R, ...,-1, 0, 1, ... R}
     filename = 'data/synthetic_graph_r{}.pkl'.format(R)
 
     N = (2*R + 1)**2    # number of nodes
